@@ -2,17 +2,17 @@ var KetherHomepage = artifacts.require("./KetherHomepage.sol");
 
 const deployed = {
   'rinkeby': {
-    ownerAddress: "0x961Aa96FebeE5465149a0787B03bFa14D8e9033F",
-    contractAddress: "0xb88404dd8fe4969ef67841250baef7f04f6b1a5e",
+    ownerAddress: "0x641ad78baca220c5bd28b51ce8e0f495e85fe689",
+    contractAddress: "0x92dfc6cfe5e6acdd19b278ca82e2acbff1cba2db",
   },
   'mainnet': {
-    ownerAddress: "0xd534d9f6e61780b824afaa68032a7ec11720ca12",
-    contractAddress: "0xb5fe93ccfec708145d6278b0c71ce60aa75ef925",
+    ownerAddress: "0x641ad78baca220c5bd28b51ce8e0f495e85fe689",
+    contractAddress: "0x92dfc6cfe5e6acdd19b278ca82e2acbff1cba2db",
   },
 };
 
 module.exports = function(callback) {
-  const cfg = deployed.mainnet;
+  const cfg = deployed.rinkeby;
   KetherHomepage
     .at(cfg.contractAddress)
     .then(function(contract) {
