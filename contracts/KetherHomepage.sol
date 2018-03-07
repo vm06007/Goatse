@@ -62,12 +62,9 @@ contract KetherHomepage {
     /// ads are stored in an array, the id of an ad is its index in this array.
     Ad[] public ads;
 
-    function KetherHomepage(address _contractOwner, address _withdrawWallet) {
-        require(_contractOwner != address(0));
-        require(_withdrawWallet != address(0));
-
-        contractOwner = _contractOwner;
-        withdrawWallet = _withdrawWallet;
+    function KetherHomepage() {
+        contractOwner = 0x8D18694cEc03001f43280D864FFC8E5172dDC940;
+        withdrawWallet = 0xcf34712c0207296ead69b65C7933cd7c801b12f1;
     }
 
     /// getAdsLength tells you how many ads there are

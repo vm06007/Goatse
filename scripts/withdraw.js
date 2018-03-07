@@ -2,12 +2,12 @@ var KetherHomepage = artifacts.require("./KetherHomepage.sol");
 
 const deployed = {
   'rinkeby': {
-    ownerAddress: "0x641ad78baca220c5bd28b51ce8e0f495e85fe689",
-    contractAddress: "0x92dfc6cfe5e6acdd19b278ca82e2acbff1cba2db",
+    ownerAddress: "0x8D18694cEc03001f43280D864FFC8E5172dDC940",
+    contractAddress: "0x2b3ba31dea402328c972196d4442275aa4dcad0e",
   },
   'mainnet': {
-    ownerAddress: "0x641ad78baca220c5bd28b51ce8e0f495e85fe689",
-    contractAddress: "0x92dfc6cfe5e6acdd19b278ca82e2acbff1cba2db",
+    ownerAddress: "0x8D18694cEc03001f43280D864FFC8E5172dDC940",
+    contractAddress: "0x2b3ba31dea402328c972196d4442275aa4dcad0e",
   },
 };
 

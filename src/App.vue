@@ -78,9 +78,9 @@ import contractJSON from 'json-loader!../build/contracts/KetherHomepage.json'
 
 const deployConfig = {
   "TestNet (Rinkeby)": {
-    contractAddr: '0x0852a02e6ee33a0c316e22de1838c30a0832792c',
+    contractAddr: '0x2b3ba31dea402328c972196d4442275aa4dcad0e',
     web3Fallback: 'https://rinkeby.infura.io/VZCd1IVOZ1gcPsrc9gd7',
-    etherscanLink: 'https://rinkeby.etherscan.io/address/0x0852a02e6ee33a0c316e22de1838c30a0832792c',
+    etherscanLink: 'https://rinkeby.etherscan.io/address/0x2b3ba31dea402328c972196d4442275aa4dcad0e',
     prerendered: {
       image: 'https://storage.googleapis.com/storage.thousandetherhomepage.com/rinkeby.png',
       data: 'https://storage.thousandetherhomepage.com/rinkeby.json',
