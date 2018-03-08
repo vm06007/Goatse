@@ -28,7 +28,8 @@ contract KetherHomepage {
     );
 
     /// Price is 1 kether divided by 1,000,000 pixels
-    uint public constant weiPixelPrice = 1000000000000000;
+    /// This is equivalent of 0.0001 Ether -> https://etherconverter.online/
+    uint public constant weiPixelPrice = 100000000000000;
 
     /// Each grid cell represents 100 pixels (10x10).
     uint public constant pixelsPerCell = 100;
