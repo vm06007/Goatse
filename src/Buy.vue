@@ -43,7 +43,7 @@
 </template>
 
 <script>
-const ethPerPixel = 1000 / 1000000;
+const ethPerPixel = 1000 / 10000000;
 
 export default {
   props: ["web3", "contract", "isReadOnly"],

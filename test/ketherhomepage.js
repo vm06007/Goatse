@@ -1,6 +1,6 @@
 const KetherHomepage = artifacts.require("./KetherHomepage.sol");
 // TODO should I query the contract to make sure the above values are right?
-const weiPixelPrice = web3.toWei(1000/1000000, "ether");
+const weiPixelPrice = web3.toWei(1000/10000000, "ether");
 const pixelsPerCell = 100;
 
 const oneHundredCellPrice = 10 * 10 * pixelsPerCell * weiPixelPrice;

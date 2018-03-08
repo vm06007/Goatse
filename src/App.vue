@@ -2,7 +2,7 @@
   <div id="app" class="container">
     <header>
       <h1>The Thousand Ether Homepage</h1>
-      <h2>1,000,000 pixels &middot; 0.001 ETH per pixel &middot; Own a piece of blockchain history!</h2>
+      <h2>1,000,000 pixels &middot; 0.0001 ETH per pixel &middot; Own a piece of blockchain history!</h2>
       <div class="sold" v-if="ready">
         {{$store.state.adsPixels}} pixels sold <button v-on:click="$store.commit('updatePreview', {x: 20, y: 20})" v-if="!$store.state.previewAd">Buy Pixels</button>
       </div>
@@ -78,9 +78,9 @@ import contractJSON from 'json-loader!../build/contracts/KetherHomepage.json'
 
 const deployConfig = {
   "TestNet (Rinkeby)": {
-    contractAddr: '0x2b3ba31dea402328c972196d4442275aa4dcad0e',
+    contractAddr: '0x6c5eefce5d71be9b9d21a91fc2567756f5d73d09',
     web3Fallback: 'https://rinkeby.infura.io/VZCd1IVOZ1gcPsrc9gd7',
-    etherscanLink: 'https://rinkeby.etherscan.io/address/0x2b3ba31dea402328c972196d4442275aa4dcad0e',
+    etherscanLink: 'https://rinkeby.etherscan.io/address/0x6c5eefce5d71be9b9d21a91fc2567756f5d73d09',
     prerendered: {
       image: 'https://storage.googleapis.com/storage.thousandetherhomepage.com/rinkeby.png',
       data: 'https://storage.thousandetherhomepage.com/rinkeby.json',
