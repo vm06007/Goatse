@@ -83,18 +83,18 @@ const deployConfig = {
     etherscanLink: 'https://rinkeby.etherscan.io/address/0x6c5eefce5d71be9b9d21a91fc2567756f5d73d09',
     prerendered: {
       image: 'https://storage.googleapis.com/storage.thousandetherhomepage.com/rinkeby.png',
-      data: 'https://storage.thousandetherhomepage.com/rinkeby.json',
+      data: 'https://goatse.cx/test12/ads.json',
       loadRemoteImages: true,
       loadFromWeb3: true,
     },
   },
   "MainNet": {
-    contractAddr: '0xb5fe93ccfec708145d6278b0c71ce60aa75ef925',
+    contractAddr: '0x59bddab3e5115a1678e6314584d0d1bc2737381e',
     web3Fallback: 'https://mainnet.infura.io/VZCd1IVOZ1gcPsrc9gd7',
-    etherscanLink: 'https://etherscan.io/address/0xb5fe93ccfec708145d6278b0c71ce60aa75ef925',
+    etherscanLink: 'https://etherscan.io/address/0x59bddab3e5115a1678e6314584d0d1bc2737381e',
     prerendered: {
       image: 'https://storage.googleapis.com/storage.thousandetherhomepage.com/mainnet.png',
-      data: 'https://storage.thousandetherhomepage.com/mainnet.json',
+      data: 'https://goatse.cx/test12/ads.json',
       loadRemoteImages: true,
       loadFromWeb3: true,
     },
