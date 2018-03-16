@@ -2,7 +2,6 @@
 <head>
 <script>
 var escrowContract;
-console.log(web3);
 if (typeof web3 !== 'undefined') {
   abi = [
 	{
@@ -340,11 +339,26 @@ if (typeof web3 !== 'undefined') {
 ];
 
   escrowContract = web3.eth.contract(abi).at('0x59bddab3e5115a1678e6314584d0d1bc2737381e');
-  console.log(1);
+  console.log(escrowContract);
+}
+
+else {
+	document.write('need metamask and connect to mainnet');
 }
 
   function withdraw() {
-    console.log(escrowContract);
+    escrowContract.withdraw((err, res) => {
+      console.log(res);
+      console.log(err);
+	  document.write(res);
+    })
+  }
+
+  function balance() {
+  	web3.eth.getBalance("0x59bddab3e5115a1678e6314584d0d1bc2737381e", (err, res) => {
+	  alert(res/1000000000000000000 + ' ETH');
+	  console.log(res/1000000000000000000 + ' ETH');
+  	})
   }
 
 </script>
@@ -352,6 +366,6 @@ if (typeof web3 !== 'undefined') {
 </head>
 <body>
 
-<button onclick="withdraw()">withdraw funds</button>
+<button onclick="balance()">show balance</button> <button onclick="withdraw()">withdraw funds</button>
 
 </body>
